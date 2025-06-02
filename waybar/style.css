@@ -1,0 +1,151 @@
+@define-color base #29273d;
+@define-color mantle #323642;
+@define-color crust #252339;
+
+@define-color text #d8dee9;
+@define-color subtext0 #e5e9f0;
+@define-color subtext1 #eceff4;
+
+@define-color surface0 #312f45;
+@define-color surface1 #545260;
+@define-color surface2 #323046;
+
+@define-color overlay0 #2a283e;
+@define-color overlay1 #2e2c42;
+@define-color overlay2 #242238;
+
+@define-color overlay2 #9399b2;
+@define-color blue #8be9fd;
+@define-color purple #bd93f9;
+@define-color green #50fa7b;
+@define-color yellow #f1fa8c;
+@define-color orange #ffb86c;
+@define-color red #ff5555;
+@define-color pink #ff79c6;
+@define-color beige #bc8c7c;
+* {
+  font-family: Fira Code Nerd Font;
+  font-weight: bold;
+  font-size: 13px;
+  min-height: 0;
+}
+
+#waybar {
+  background: transparent;
+  color: @text;
+}
+
+#clock,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#custom-updates,
+#custom-dunst,
+#tray,
+#custom-lock,
+#custom-power {
+  background-color: @surface0;
+  padding: 0.5rem 0.75rem;
+  margin: 5px 0;
+}
+
+#workspaces {
+  border-radius: 1rem;
+
+  margin: 5px 5px 5px 5px;
+
+  min-width: 3.1rem;
+
+  background-color: @surface0;
+}
+
+#workspaces button {
+  color: @text;
+  background-color: @surface0;
+  border-radius: 2rem;
+  padding: 0.5rem 0.6rem;
+  margin: 0.1rem 0.3rem;
+
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+}
+
+#workspaces button.empty {
+  color: @overlay0;
+}
+
+#workspaces button.special {
+  color: @pink;
+}
+
+#workspaces button.active {
+  color: @beige;
+  background-color: @surface0;
+}
+
+#workspaces button:hover {
+  color: @blue;
+  background: @surface0;
+}
+
+#clock {
+  border-radius: 1rem;
+  color: @text;
+}
+
+#network {
+  color: @text;
+  border-radius: 1rem 0px 0px 1rem;
+  margin-left: 1rem;
+}
+
+#pulseaudio {
+  color: @text;
+}
+
+#cpu {
+  color: @text;
+}
+
+#memory {
+  color: @text;
+}
+
+#battery {
+  color: @text;
+}
+
+#battery.charging {
+  color: @text;
+}
+
+#battery.warning:not(.charging) {
+  color: @text;
+}
+
+#custom-updates {
+  color: @text;
+}
+
+#custom-dunst {
+  margin-right: 0.75rem;
+  border-radius: 0px 1rem 1rem 0px;
+  color: @text;
+}
+
+#tray {
+  color: @text;
+}
+
+#custom-lock {
+  color: @text;
+}
+
+#custom-power {
+  margin: 5px 5px 5px 0;
+  border-radius: 0px 1rem 1rem 0px;
+  color: @text;
+}
