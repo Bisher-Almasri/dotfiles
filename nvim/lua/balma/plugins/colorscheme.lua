@@ -1,9 +1,9 @@
 return {
-	"bluz71/vim-nightfly-colors",
+	"bluz71/vim-moonfly-colors",
 	priority = 1000,
 	config = function()
-		vim.g.nightflyTransparent = true
+		vim.g.moonflyTransparent = true
 
-		vim.cmd([[colorscheme nightfly]])
+		vim.cmd([[colorscheme moonfly]])
 	end,
 }

@@ -73,12 +73,12 @@ return {
 			},
 		})
 
-		-- Custom highlight groups for a modern, soft look
-		vim.cmd [[
-		highlight! Pmenu guibg=#182235 guifg=#c3ccdc
-		highlight! PmenuSel guibg=#28344a guifg=#65D1FF gui=bold
-		highlight! PmenuBorder guifg=#28344a guibg=#182235
-		highlight! FloatBorder guifg=#28344a guibg=#182235
+		-- Custom highlight groups for a modern, soft look that matches Moonfly
+		vim.cmd [[  
+		highlight! Pmenu guibg=#080808 guifg=#c6c6c6
+		highlight! PmenuSel guibg=#30365F guifg=#c6c6c6 gui=bold
+		highlight! PmenuBorder guifg=#303030 guibg=#080808
+		highlight! FloatBorder guifg=#303030 guibg=#080808
 		highlight! link PmenuSbar Pmenu
 		highlight! link PmenuThumb PmenuSel
 		]]

@@ -3,6 +3,18 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons", "folke/todo-comments.nvim" },
   opts = {
     focus = true,
+    icons = true,
+    fold_open = "", 
+    fold_closed = "",
+    indent_lines = true,
+    signs = {
+      error = "",
+      warning = "",
+      hint = "",
+      information = "",
+      other = "﫠",
+    },
+    use_diagnostic_signs = false,
   },
   cmd = "Trouble",
   keys = {
